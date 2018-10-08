@@ -3,14 +3,14 @@ package pl.sdacademy.immutability;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookCollection {
+class BookCollection {
     private List<Book> books = new ArrayList<>();
 
     void addBook(Book book) {
         books.add(book);
     }
 
-    Book findBookbyTitle(String title) {
+    Book findBookByTitle(String title) {
         for (Book book : books)
             if (book.getTitle().equals(title)) {
                 return book;

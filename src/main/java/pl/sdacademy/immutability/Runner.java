@@ -2,7 +2,7 @@ package pl.sdacademy.immutability;
 
 import static pl.sdacademy.immutability.Currency.*;
 
-public class Runner {
+class Runner {
     public static void main(String[] args) {
         BookCollection bookCollection = new BookCollection();
         bookCollection.addBook(new Book(1, "Tytuł", "Autor", new Price(29, PLN)));
@@ -11,6 +11,6 @@ public class Runner {
 
         System.out.println(bookCollection);
         bookCollection.printAllBooks();
-        System.out.println(bookCollection.findBookbyTitle("Tytuł3"));
+        System.out.println(bookCollection.findBookByTitle("Tytuł3"));
     }
 }
