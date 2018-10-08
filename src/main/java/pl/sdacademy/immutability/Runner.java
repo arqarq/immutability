@@ -12,5 +12,6 @@ class Runner {
         System.out.println(bookCollection);
         bookCollection.printAllBooks();
         System.out.println(bookCollection.findBookByTitle("Tytuł3"));
+        System.out.println(bookCollection.findBookByTitle("Tytuł4"));
     }
 }
